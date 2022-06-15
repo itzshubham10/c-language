@@ -1,0 +1,54 @@
+1.Why do computers understand only binary language?
+
+ computer understand only binary language because as we know that our computer is an electronic device that is made up of hardware which consist RAM,ROM,hardisk etc.
+ And it is much easier to represent hardware in two states rather than many states.so such small components of hardware are made up of capacitors
+ a capacitors is a physical device which stores charge,so now we have two possiblities either it holds charge or not.so for our convinience we stated as,
+ if they contain charge so it will be in 1 state,if it will not then it will be in 0 state.And we can also convert any instruction in binary form very easily and
+ information through hardware can only represent in two state i.e, 1 or 0.so that's why computer understand only binary language.
+
+2.What is the full form of IDE?
+
+ Full form of IDE is Integrated Development Environment.
+
+
+3.What is the difference between a text editor and a code editor?
+
+ Text editor can not understand our program which we write for them it is a normal text form and they does not provide any programming experience but in case of
+ code editor(a form of text editor)they know and understand the code or program which we write in them and they also provide a great experience for coding by 
+ highlighting the programming elements with different colours and they also help us to figure out the errors which we have done in our program.
+
+4.What are the steps to develop software using the C language?
+
+ Steps to develop software using c language are:-
+ 1. create a source file
+ 3. build software - we have to just click on build and computer will automatically build your software by using preprocessor,compiler and linker.
+
+
+5. Explore by your own-
+
+a. What is the latest version of C Language?
+
+ C11 is the latest version of c language.
+
+b.Who developed C Language?
+
+ Dennis M. Ritchie developed c language in 1970.
+
+c.What is the difference between System and Application Software?
+  
+ System Software is the type of software which is the interface between application software and system while Application Software is the type of software that 
+ runs as per user request.It runs on the platform which is provided by system software.
+
+d.How to convert a number from a decimal number system to a binary number system?
+
+ We can convert a decimal number system  to a binary number system by dividing the number by 2 and what ever the quotient we get again divide it by 2 and 
+ the process goes on till the quotient becomes 1. now arange the last quotient along with all remainders which we have got in the above process in reverse order.
+ Thus we got the binary number of that decimal. 
+ ex- (8)10 to (?)2
+ 8/2=4 r=0
+ 4/2=2 r=0
+ 2/2=1 r=0
+ arranging in reverse order 1000.
+ so 1000 binary number is equivalent to 8 decimal number.
+
+
