@@ -1,0 +1,31 @@
+                                          ASSINGMENT 2
+
+
+ 1.  Which of the following are real constants?
+     3, ‘A’, 4.5, 3.0, ‘+’, -25, -0.0
+Ans- 4.5,3.0,-0.0
+
+ 2.  Which of the following are not keywords in C Language?
+ auto, dynamic, static, typedef, define, enum, is, default, this, super
+Ans- this,super,is,dynamic,define
+
+ 3.  Can we make a variable with the name switch? (Yes or No)
+ Ans- No
+
+4.  Keywords are defined in the compiler or their meaning is stored in the library?
+Ans- Meaning of keywords are stored in the library.
+
+ 5.  Where variables are created? (RAM, ROM, Secondary Storage or CPU)
+ Ans- Variables are created in RAM.
+
+ 6.  Who developed C Language?
+ Ans- Dennis Ritchie
+
+ 7.  When was the C language developed?
+ Ans- C language was developed in the year 1972.
+
+ 8.  What is the name of the operating system which is responsible for the inception of the C language?
+ Ans- UNIX operating system
+
+ 9.  Whether C language is a high level or low level programming language?
+ Ans- C language is a high level as well as low level  programming language,by using this language we can code hardware independent or hardware dependent  program .
