@@ -1,31 +1,182 @@
-                                          ASSINGMENT 2
+                                                             Assignment - 2 
+
+                                                         Operators in C Language
 
 
- 1.  Which of the following are real constants?
-     3, ‘A’, 4.5, 3.0, ‘+’, -25, -0.0
-Ans- 4.5,3.0,-0.0
 
- 2.  Which of the following are not keywords in C Language?
- auto, dynamic, static, typedef, define, enum, is, default, this, super
-Ans- this,super,is,dynamic,define
+1. Write a program to print unit digit of a given number.
 
- 3.  Can we make a variable with the name switch? (Yes or No)
- Ans- No
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter a number");
+	scanf("%d",&a);
+	printf("Unit digit of a given number is %d",a%10);
+	return 0;
+}
 
-4.  Keywords are defined in the compiler or their meaning is stored in the library?
-Ans- Meaning of keywords are stored in the library.
 
- 5.  Where variables are created? (RAM, ROM, Secondary Storage or CPU)
- Ans- Variables are created in RAM.
+2. Write a program to print a given number without its last digit.
 
- 6.  Who developed C Language?
- Ans- Dennis Ritchie
 
- 7.  When was the C language developed?
- Ans- C language was developed in the year 1972.
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter any number");
+	scanf("%d",&a);
+	printf("new number is %d",a/10);
+	return 0;
+}
 
- 8.  What is the name of the operating system which is responsible for the inception of the C language?
- Ans- UNIX operating system
 
- 9.  Whether C language is a high level or low level programming language?
- Ans- C language is a high level as well as low level  programming language,by using this language we can code hardware independent or hardware dependent  program .
+3. Write a program to swap values of two int variables.
+
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("Enter two numbers :");
+	scanf("%d %d",&a,&b);
+	printf("before swapping a=%d b=%d",a,b);
+	c=a;
+	a=b;
+	b=c;
+	printf("after swapping a=%d b=%d",a,b);
+	return 0;
+}
+
+
+
+4. Write a program to swap values of two int variables without using a third variable.
+
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter two numbers :");
+    scanf("%d %d", &a, &b);
+    printf("before swapping a=%d b=%d", a, b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf("After swapping a=%d b=%d", a, b);
+    return 0;
+}
+
+
+
+5. Write a program to input a three-digit number and display the sum of the digits.
+
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Enter any three digit number");
+    scanf("%d", &num);
+    num % 10;
+    (num / 10) % 10;
+    num / 100;
+    printf("Sum of the digits is %d",num%10 + (num/10)%10 + num/100);
+    return 0;
+}
+
+
+
+6. Write a program which takes a character as an input and displays its ASCII code.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    char character;
+    printf("Enter any character");
+    scanf("%c", &character);
+    printf("The ASCII value of %c is %d", character, character);
+    return 0;
+}
+
+
+9. Write a program to print size of an int, a float, a char and a double type variable.
+#include<stdio.h>
+int main()
+{
+	int a;
+	float b;
+	char c;
+	double d;
+
+	printf("%lu",sizeof(a));
+	printf("%lu",sizeof(b));
+	printf("%lu",sizeof(c));
+	printf("%lu",sizeof(d));
+	return 0;
+
+}
+
+
+10. Write a program to make the last digit of a number stored in a variable as zero.
+(Example - if x=2345 then make it x=2340)
+
+
+#include<stdio.h>
+int main()
+
+{
+	int a,s ;
+	printf("Enter any number :");
+	scanf("%d",&a);
+	s = a/10;
+	s*10;
+	printf("New number = %d",s*10);
+	return 0;
+}
+
+
+
+11. Write a program to input a number from the user and also input a digit. Append a
+digit in the number and print the resulting number. (Example - number=234 and
+digit=9 then the resulting number is 2349)
+
+
+#include<stdio.h>
+int main()
+{
+	int num,digit,s;
+	printf("Enter any number and one digit");
+	scanf("%d %d",&num,&digit);
+	s=num*10+digit;
+	printf("New number is %d",s);
+	return 0;
+}
+
+
+12. Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR and
+convert it into USD.
+
+#include<stdio.h>
+int main()
+{
+	float inr,usd;
+	printf("Enter the amount in INR");
+	scanf("%f",&inr);
+	usd=(1/76.23)*inr;
+	printf("amount in usd %f",usd);
+        return 0;
+}
+
+7,8,13
+
+
+
+
+
+
+
+
+
+
+

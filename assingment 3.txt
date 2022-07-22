@@ -1,33 +1,391 @@
-                                            ASSINGMENT 3
-                                     
-1.What are the primitive data types in C Language?
-Ans- such basic datatypes which are already predefined in c language are called primitive data types.
+							Assignment - 3 
 
-2.What kind of statements can be written outside the function body?
-Ans- declaration statements are written outside the function body.
+						Decision Control Statements
 
-3.What is the size of float type variable?
-Ans- 4 byte.
 
-4.What is the value of an uninitialised variable?
-Ans- undefined value.
+1. Write a program to check whether a given number is positive or non-positive.
 
-5.What is the difference between float and double?
-Ans- (a) size of float is 4 byte while that of double is 8 byte
-     (b) accuracy of double is much better than float because it store data upto 8 byte.
 
-6.What is the full form of ASCII?
-Ans- American Standard code for Information Interchange.
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter any number :");
+	scanf("%d",&a);
+	if(a>0)
+	printf("enterd number is positive");
+	else
+	printf("Entered number is non positive");
+	return 0;
+}
 
-7.What is the difference between a keyword and a function?
-Ans-Keywords has a predefined meaning in the c compiler while functions are the set of instructions      
-that can be executed when it is called.
 
-8.Explore the use of type modifiers in C language.
-Ans- Modifiers are keywords which changes the meaning of basic data types.It specify that how much memory space should be allocated to the variable.
 
-9.Can you assign a character constant in an int variable?
-Ans- Yes,we can assign a character constant in an int variable.
+2. Write a program to check whether a given number is divisible by 5 or not.
 
-10.State the following statement as true or false -”Every block of code is a function”.
-Ans- FALSE.
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter any number");
+	scanf("%d",&a);
+	if(a/5*5==a)
+	printf("%d is divisible by 5",a);
+	else printf("%d is not divisible by 5",a);
+	return 0;
+}
+
+
+
+3. Write a program to check whether a given number is an even number or an odd
+number.
+
+
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("Enter any number");
+	scanf("%d",&a);
+	if(a%2==0)
+		printf("Even number");
+	else
+		printf("Odd number");
+	return 0;
+
+}
+
+
+
+4. Write a program to check whether a given number is an even number or an odd
+number without using % operator.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a, b;
+    printf("Enter a number :");
+    scanf("%d", &a);
+    if ((a / 2) * 2 == a)
+    {
+        printf("%d is even number", a);
+    }
+    else
+        printf("%d is odd number", a);
+    return 0;
+}
+
+
+
+5. Write a program to check whether a given number is a three-digit number or not.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d", &a);
+    if (a > 99 && a <= 999)
+    {
+        printf("%d is a three digit number", a);
+    }
+    else
+        printf("%d is not a three digit number", a);
+    return 0;
+}
+
+
+
+6. Write a program to print greater between two numbers. Print one number of both are
+the same.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a, b;
+    printf("Enter two numnbers :");
+    scanf("%d %d", &a, &b);
+    if (a > b)
+    {
+        printf("%d is greater", a);
+    }
+    else if(a!=b)
+    {
+        printf("%d is greater ", b);
+    }
+
+    if (a == b)
+    {
+        printf("6");
+    }
+
+    return 0;
+}
+
+
+
+7. Write a program to check whether roots of a given quadratic equation are real &
+distinct, real & equal or imaginary roots
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d;
+	printf("Enter the coefficient of x^2 and x and constant term:");
+	scanf("%d %d %d",&a,&b,&c);
+	d=sqrt(b*b-4*a*c);             // calculating discriminant
+	if(d>0)
+		printf("The equation has real and distinct roots");
+	else if(d==0)
+		printf("The equation has real and equal roots");
+	else if(d<0)
+		printf("The equation has imaginary roots");
+	return 0;
+	
+}
+
+
+9. Write a program to find the greatest among three given numbers. Print number once
+if the greatest number appears two or three times.
+
+
+
+#include<stdio.h>
+ int main(int argc, char const *argv[])
+ {
+    int a,b,c;
+    printf("Enter 3 nos.");
+    scanf("%d %d %d ",&a,&b,&c);
+    if (a>b && a>c)
+    {
+        printf("%d is greater among all",a);
+    }
+    else
+    if (b>a && b>c)
+    {
+        printf("%d is greater among all",b);
+    }
+    else
+     printf("%d is greater among all",c);
+    
+    return 0;
+ }
+
+
+
+10. Write a program which takes the cost price and selling price of a product from the
+user. Now calculate and print profit or loss percentage.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    float cp, sp, profit, loss,pp, lp;
+    printf("Enter Cost Price and Selling Price of a product :");
+    scanf("%f %f", &cp, &sp);
+    if (sp > cp)
+    {
+        profit = sp - cp;
+        pp = (profit / cp) * 100;       //profit percentage
+        printf("congrats you are in a profit of %f %%", pp);
+    }
+    else
+    {
+        loss = cp - sp;
+        lp = (loss / cp) * 100; // loss percentage
+        printf("ops! you are in a loss of %f %%", lp);
+    }
+
+    return 0;
+}
+
+
+11. Write a program to take marks of 5 subjects from the user. Assume marks are given
+out of 100 and passing marks is 33. Now display whether the candidate passed the
+examination or failed.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int mom, mos, moe, moc, moh, total_marks;
+    printf("Enter marks of Maths : ");
+    scanf("%d", &mom);
+    printf("Enter marks of science : ");
+    scanf("%d", &mos);
+    printf("Enter marks of english : ");
+    scanf("%d", &moe);
+    printf("Enter marks of computer : ");
+    scanf("%d", &moc);
+    printf("Enter marks of hindi : ");
+    scanf("%d", &moh);
+    if (mom >= 33 &&moe >= 33 &&mos >= 33 &&moc >=  33 && moh >= 33)
+    {
+        printf("Congrats you are passed!");
+    }
+    else
+        printf("ops! you are failed");
+
+    return 0;
+}
+
+
+
+12. Write a program to check whether a given alphabet is in uppercase or lowercase.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+  char store;
+  printf("Enter any character ");
+  scanf("%c", &store);
+  if (store >= 65 && store <= 90)
+  	printf("uppercase");
+  else
+    	printf("lowercases");
+
+  return 0;
+}
+
+
+
+13. Write a program to check whether a given number is divisible by 3 and divisible by 2.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter any number :");
+    scanf("%d", &a);
+    if (a % 3 == 0 && a%2==0)
+    
+        printf("%d is divisible by both 3 and 2\n ", a);
+    
+	else 
+	 printf("%d is not divisible by both 3 and 2\n",a);
+	
+    return 0;
+}
+
+
+
+14. Write a program to check whether a given number is divisible by 7 or divisible by 3.
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter any number :");
+    scanf("%d", &a);
+    if (a % 7 == 0)
+    {
+        printf("%d is divisible by 7\n ", a);
+    }
+    else
+        printf("%d is not divisible by 7\n ", a);
+    if (a % 3 == 0)
+    {
+        printf("%d is divisible by 3\n ", a);
+    }
+    else
+        printf("%d is not divisible by 3\n", a);
+
+    return 0;
+}
+
+
+
+17. Write a program which takes the length of the sides of a triangle as an input. Display
+whether the triangle is valid or not.
+
+
+#include<stdio.h>
+int main()
+{
+	int a1,b1,c1;
+	printf("Enter the sides:");
+	scanf("%d %d %d",&a1,&b1,&c1);
+	if(a1+b1>c1 || b1+c1>a1 || a1+c1>b1)
+	printf("Triangle is valid");
+	else
+	printf("Triangle is not valid");
+	return 0;
+	 
+}
+
+
+
+18. Write a program which takes the month number as an input and display number of
+days in that month.
+
+
+
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int num;
+    printf("Enter the month number");
+    scanf("%d", &num);
+    if (num == 1)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 2)
+    {
+        printf("This month has 28 days");
+    }
+    else if (num == 3)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 4)
+    {
+        printf("This month has 30 days");
+    }
+    else if (num == 5)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 6)
+    {
+        printf("This month has 30 days");
+    }
+    else if (num == 7)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 8)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 9)
+    {
+        printf("This month has 30 days");
+    }
+    else if (num == 10)
+    {
+        printf("This month has 31 days");
+    }
+    else if (num == 11)
+    {
+        printf("This month has 30 days");
+    }
+    else if (num == 12)
+    {
+        printf("This month has 31 days");
+    }
+
+    return 0;
+}
+
+
+
