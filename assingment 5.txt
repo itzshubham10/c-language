@@ -1,0 +1,153 @@
+				                     Assignment - 5
+
+		                           More on Iterative Control Statements
+
+1. Write a program to print MySirG N times on the screen.
+#include<stdio.h>
+int main()
+{
+int i,a;
+printf("Enter number of times:");
+scanf("%d",&a);
+for( i=1;i<=a;i++)
+{
+printf("MySirg\n");
+}
+return 0;
+}
+
+2. Write a program to print the first n natural numbers.
+#include<stdio.h>
+int main()
+{
+	int i,a;
+printf("Enter number of times:");
+scanf("%d",&a);
+
+for(i=1;i<=a;i++)
+{
+	printf("%d ",i);
+}
+return 0;
+}
+
+3. Write a program to print the first n natural numbers in reverse order
+#include<stdio.h>
+int main()
+{
+	int a,i;
+printf("How much natural numbers you have to print?:");
+scanf("%d",&a);
+
+for(i=a;i>=1;i--)
+{
+	printf("%d ",i);
+}
+return 0;
+}
+
+4. Write a program to print the first n odd natural numbers.
+#include<stdio.h>
+int main()
+{
+	int a, i;
+printf("(How much odd numbers you have to print?");
+scanf("%d",&a);
+
+	for(i=1;i<=2*a;i+=2)
+	{
+		printf("%d ",i);
+	}
+	return 0;
+}
+
+5. Write a program to print the first 10 odd natural numbers in reverse order.
+#include<stdio.h>
+int main()
+{
+	int a, i;
+printf("(How much odd numbers you have to print?");
+scanf("%d",&a);
+
+	for(i=a;i>=1;i-=2)
+	{
+		printf("%d ",i);
+	}
+	return 0;
+}
+6. Write a program to print the first n even natural numbers.
+#include<stdio.h>
+int main()
+{
+	int i,a;
+printf("(How much even numbers you have to print?");
+scanf("%d",&a);
+for(i=2;i<=a;i+=2)
+	{
+		printf("%d ",i);
+	}
+	return 0;
+}
+
+7. Write a program to print the first n even natural numbers in reverse order.
+#include<stdio.h>
+int main()
+{
+	int i,a;
+printf("(How much even numbers you have to print?");
+scanf("%d",&a);
+
+	for(i=a;i>=1;i--)
+	{
+		if(i%2==0)
+{
+		printf("%d ",i);
+}
+	}
+	return 0;
+}
+8. Write a program to print squares of the first n natural numbers
+#include<stdio.h>
+int main()
+{
+	int a, i;
+printf("(Enter number of terms");
+scanf("%d",&a);
+
+	for(i=1;i<=a;i++)
+	{
+	printf("%d ",i*i);
+	}
+	return 0;
+}
+9. Write a program to print cubes of the first n natural numbers.
+#include<stdio.h>
+int main()
+{
+	int a, i;
+printf("(Enter number of terms");
+scanf("%d",&a);
+
+	for(i=1;i<=a;i++)
+	{
+	printf("%d ",i*i*i);
+	}
+	return 0;
+}
+
+10. Write a program to print a table of n.
+#include<stdio.h>
+int main()
+{
+int a,i;
+printf("which table you want to print?");
+scanf("%d",&a)
+for(i=1;i<=10;i++)
+{
+	printf(" %d X %d = %d",a,i,a*i);
+}
+return 0;
+}
+
+
+
