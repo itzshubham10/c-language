@@ -1,0 +1,153 @@
+                                         
+                                             Assignment - 13
+
+
+1. Write a recursive function to calculate sum of first N natural numbers.
+
+#include<stdio.h>
+int naturalsum(int);
+int main()
+{
+	
+	int a,b;
+	printf("Enter a natural number");
+	scanf("%d",&a);
+	b=naturalsum(a);
+	printf("The sum of first %d natural number is %d",a,b);
+}
+
+int naturalsum(int num)
+{
+	int s;
+	if (num==1)
+	return 1;
+	s=naturalsum(num-1)+ num;
+	return s;
+
+}
+
+
+
+2. Write a recursive function to calculate sum of first N odd natural numbers.
+
+
+#include <stdio.h>
+int oddsum(int);
+int main()
+{
+
+    int a, b;
+    printf("Enter a natural number");
+    scanf("%d", &a);
+    b = oddsum(a);
+    printf("The sum of first %d odd natural number is %d", a, b);
+}
+
+int oddsum(int num)
+{
+    int s;
+    if (num == 1)
+     return 1;
+    s = oddsum(num - 1) + 2 * num - 1;
+    return s;
+}
+
+
+3. Write a recursive function to calculate sum of squares of first n natural numbers.
+
+#include <stdio.h>
+int sqrsum(int);
+int main()
+{
+
+    int a, b;
+    printf("Enter a natural number");
+    scanf("%d", &a);
+    b = sqrsum(a);
+    printf("The sum of squares of first %d natural number is %d", a, b);
+}
+
+int sqrsum(int num)
+{
+    int s;
+    if (num == 1)
+    {
+        return 1;
+    }
+    s = sqrsum(num - 1) + num * num;
+    return s;
+}
+
+
+
+5. Write a recursive function to calculate sum of digits of a given number.
+
+#include <stdio.h>
+int digitsum(int);
+int main()
+{
+
+    int a, b;
+    printf("Enter a natural number");
+    scanf("%d", &a);
+    b = digitsum(a);
+    printf("The sum of the digits of the number is %d ", b);
+}
+
+int digitsum(int num)
+{
+    int s;
+
+    if (num == 0)
+    {
+        return 0;
+    }
+
+    s = digitsum(num / 10) + num % 10;
+    return s;
+}
+
+
+
+6. Write a recursive function to calculate factorial of a given number.
+
+
+#include <stdio.h>
+int fact(int);
+int main()
+{
+
+    int a, b;
+    printf("Enter a natural number");
+    scanf("%d", &a);
+    b = fact(a);
+    printf("factorial of  %d is %d ", a, b);
+}
+
+int fact(num)
+{
+
+    if (num == 1)
+    {
+        return 1;
+    }
+
+    int s;
+    s = fact(num - 1) * num;
+    return s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
