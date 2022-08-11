@@ -1,0 +1,198 @@
+                                              Assignment - 10
+
+                                           Function in C language
+
+1. Write a function to calculate the area of a circle. (TSRS)
+
+#include <stdio.h>
+int area(int);
+int main(int argc, char const *argv[])
+{
+    float rad, a;
+    printf("Enter radius of a circle");
+    scanf("%f", &rad);
+    a = area(rad);
+    printf("Area of the circle is %f", a);
+
+    return 0;
+}
+
+int area(int rad)
+{
+    float area;
+    area = 2 * 3.14 * rad * rad;
+    return (area);
+}
+
+
+
+2. Write a function to calculate simple interest. (TSRS)
+
+
+#include <stdio.h>
+int simpleinterest(float, float, float);
+int main(int argc, char const *argv[])
+{
+    float amt, rate, time, si;
+    printf("Enter Principle amount,rate and time period");
+    scanf("%f %f %f", &amt, &rate, &time);
+
+    si = simpleinterest(amt, rate, time);
+    printf(" Simple Interest = %f", si);
+
+    return 0;
+}
+int simpleinterest(float p, float r, float t)
+{
+
+    float si;
+    si = (p * r * t) / 100;
+    return (si);
+}
+
+
+3. Write a function to check whether a given number is even or odd. Return 1 if the
+number is even, otherwise return 0. (TSRS)
+
+
+#include <stdio.h>
+int evenodd(int);
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter any number");
+    scanf("%d", &a);
+    evenodd(a);
+    printf("%d", evenodd(a));
+    return 0;
+}
+
+int evenodd(int num)
+{
+    if (num % 2 == 0)
+
+        return (1);
+
+    else
+        return (0);
+}
+
+
+
+4. Write a function to print first N natural numbers (TSRN)
+
+
+#include <stdio.h>
+void naturalnum(int);
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter any number");
+    scanf("%d", &a);
+    naturalnum(a);
+
+    return 0;
+}
+
+void naturalnum(int num)
+{
+    for (int i = 1; i < num + 1; i++)
+    {
+        printf("%d", i);
+    }
+}
+
+
+5. Write a function to print first N odd natural numbers. (TSRN)
+
+
+
+#include <stdio.h>
+void oddnatural(int);
+int main(int argc, char const *argv[])
+{
+    int a;
+    printf("Enter any number");
+    scanf("%d", &a);
+    oddnatural(a);
+    return 0;
+}
+
+void oddnatural(int num)
+{
+    for (int i = 1; i <= num; i += 2)
+    {
+        printf("%d", i);
+    }
+}
+
+
+
+6. Write a function to calculate the factorial of a number. (TSRS)
+
+
+#include <stdio.h>
+int factorial(int);
+int main(int argc, char const *argv[])
+{
+    int a, s;
+    printf("Enter any number");
+    scanf("%d", &a);
+    s = factorial(a);
+    printf("Factorial of %d is %d", a, s);
+    return 0;
+}
+
+int factorial(int num)
+{
+    int f = 1;
+    for (int i = 1; i < num + 1; i++)
+    {
+        f *= i;
+    }
+    return (f);
+}
+
+
+9. Write a function to check whether a given number contains a given digit or not.
+(TSRS)
+
+
+#include <stdio.h>
+#include <stdlib.h>
+int digitcheck (int,int);
+ int main(int argc, char const *argv[])
+{
+    int num,digit;
+     printf("Enter one number and one digit");
+     scanf("%d %d", &num, &digit);
+     digitcheck(num,digit);
+}
+
+
+int digitcheck(int num,int a)
+ {
+     int  b;
+    
+     while (num != 0)
+     {
+         b = num % 10;
+         if (b == a)
+             printf("entered number contain %d", a);
+         if (b == a)
+             exit(0);
+
+         if (num == b)
+             printf("Entered number does not contain %d\n", a);
+
+         num /= 10;
+     }
+   
+ }
+
+
+
+
+
+
+
